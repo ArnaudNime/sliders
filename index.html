@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/functions.js"></script>
+</head>
+<body class="colorOne">
+    <h1 class="center">Sliders</h1>
+    <div id="slider">
+        <img src="imgs/beach.jpg" class="slides">        
+    </div>
+    <div class="center">
+        <button id="btnAuto" >Auto</button>
+    </div>
+     <div class="divBts center">
+        <button id="leftBt" class="colorTwo"><i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
+        <span class="containerSelectEffects">
+            <select id="effects" class="colorTwo">
+                <option value="HE">Horizontal Effect</option>
+                <option value="IHE">Inverse Horizontal Effect</option>
+                <option value="VE">Vertical Effect</option>
+                <option value="IVE">Inverse Vertical Effect</option>
+                <option value="CE">Center Effect</option>
+                <option value="TLC">Top Left Corner Effect</option>
+                <option value="TRC">Top Right Corner Effect</option>
+                <option value="BLC">Bottom Left Corner Effect</option>
+                <option value="BRC">Bottom Right Corner Effect</option>
+            </select>
+        </span>
+        <button id="rightBt" class="colorTwo"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+    <div class="containerSpeed center">
+        <input id="rangeSpeed" type="range" min="1" max="2" value="1" step="1">
+    </div>
+    <div class="lcd center">
+        <span id="led">Boost</span>
+    </div>
+</body>
+<script src="js/ex.js"></script>
+</html>
